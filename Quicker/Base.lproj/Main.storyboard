@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Input View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quicker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InputViewController" customModule="Quicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,10 +30,22 @@
                                 <items>
                                     <navigationItem id="QCQ-o1-sfE">
                                         <leftBarButtonItems>
-                                            <barButtonItem title="Photo" id="pkb-dl-WOf"/>
-                                            <barButtonItem title="Lib" id="Ib7-NY-34x"/>
+                                            <barButtonItem title="Photo" id="pkb-dl-WOf">
+                                                <connections>
+                                                    <action selector="openPhoto:" destination="BYZ-38-t0r" id="28N-xP-mxK"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem title="Lib" id="Ib7-NY-34x">
+                                                <connections>
+                                                    <action selector="openLibrary:" destination="BYZ-38-t0r" id="9ZI-DK-JdR"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </leftBarButtonItems>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oMi-fk-LCf"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oMi-fk-LCf">
+                                            <connections>
+                                                <action selector="saveButton:" destination="BYZ-38-t0r" id="1Ac-oz-80O"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -57,6 +69,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentView" destination="eez-OB-9B5" id="KTm-Cf-aYN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,7 +104,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="pXZ-64-0pd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="v7V-GH-32N"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="v7V-GH-32N">
+                            <connections>
+                                <action selector="backToInput:" destination="NBO-bv-zqu" id="zas-rI-CaO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVU-E3-Ym3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,7 +126,11 @@
                         <viewLayoutGuide key="safeArea" id="hTy-17-68r"/>
                     </view>
                     <navigationItem key="navigationItem" id="HIk-d1-axT">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="qLp-dX-9S1"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="qLp-dX-9S1">
+                            <connections>
+                                <action selector="backToStack:" destination="UWm-Qv-O4W" id="mC0-uu-KjU"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="QUP-YM-BJ3"/>
                     </navigationItem>
                 </viewController>

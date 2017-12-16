@@ -92,4 +92,12 @@ class StackTableViewController: UITableViewController {
     }
     */
 
+    //MARK: Actions
+    
+    @IBAction func backToInput(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
 }
