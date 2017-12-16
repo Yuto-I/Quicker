@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A5B95C1FE4E14500A710EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B95B1FE4E14500A710EA /* AppDelegate.swift */; };
+		18A5B95E1FE4E14500A710EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B95D1FE4E14500A710EA /* ViewController.swift */; };
+		18A5B9611FE4E14500A710EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A5B95F1FE4E14500A710EA /* Main.storyboard */; };
+		18A5B9641FE4E14500A710EA /* Quicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B9621FE4E14500A710EA /* Quicker.xcdatamodeld */; };
+		18A5B9661FE4E14500A710EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A5B9651FE4E14500A710EA /* Assets.xcassets */; };
+		18A5B9691FE4E14500A710EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A5B9671FE4E14500A710EA /* LaunchScreen.storyboard */; };
+		18A5B9741FE4E14500A710EA /* QuickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B9731FE4E14500A710EA /* QuickerTests.swift */; };
+		18A5B97F1FE4E14500A710EA /* QuickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B97E1FE4E14500A710EA /* QuickerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18A5B9701FE4E14500A710EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A5B9501FE4E14500A710EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A5B9571FE4E14500A710EA;
+			remoteInfo = Quicker;
+		};
+		18A5B97B1FE4E14500A710EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A5B9501FE4E14500A710EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A5B9571FE4E14500A710EA;
+			remoteInfo = Quicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18A5B9581FE4E14500A710EA /* Quicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A5B95B1FE4E14500A710EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18A5B95D1FE4E14500A710EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18A5B9601FE4E14500A710EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18A5B9631FE4E14500A710EA /* Quicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quicker.xcdatamodel; sourceTree = "<group>"; };
+		18A5B9651FE4E14500A710EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A5B9681FE4E14500A710EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18A5B96A1FE4E14500A710EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A5B96F1FE4E14500A710EA /* QuickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A5B9731FE4E14500A710EA /* QuickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickerTests.swift; sourceTree = "<group>"; };
+		18A5B9751FE4E14500A710EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A5B97A1FE4E14500A710EA /* QuickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A5B97E1FE4E14500A710EA /* QuickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickerUITests.swift; sourceTree = "<group>"; };
+		18A5B9801FE4E14500A710EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A5B9551FE4E14500A710EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A5B96C1FE4E14500A710EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A5B9771FE4E14500A710EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A5B94F1FE4E14500A710EA = {
+			isa = PBXGroup;
+			children = (
+				18A5B95A1FE4E14500A710EA /* Quicker */,
+				18A5B9721FE4E14500A710EA /* QuickerTests */,
+				18A5B97D1FE4E14500A710EA /* QuickerUITests */,
+				18A5B9591FE4E14500A710EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18A5B9591FE4E14500A710EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A5B9581FE4E14500A710EA /* Quicker.app */,
+				18A5B96F1FE4E14500A710EA /* QuickerTests.xctest */,
+				18A5B97A1FE4E14500A710EA /* QuickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A5B95A1FE4E14500A710EA /* Quicker */ = {
+			isa = PBXGroup;
+			children = (
+				18A5B95B1FE4E14500A710EA /* AppDelegate.swift */,
+				18A5B95D1FE4E14500A710EA /* ViewController.swift */,
+				18A5B95F1FE4E14500A710EA /* Main.storyboard */,
+				18A5B9651FE4E14500A710EA /* Assets.xcassets */,
+				18A5B9671FE4E14500A710EA /* LaunchScreen.storyboard */,
+				18A5B96A1FE4E14500A710EA /* Info.plist */,
+				18A5B9621FE4E14500A710EA /* Quicker.xcdatamodeld */,
+			);
+			path = Quicker;
+			sourceTree = "<group>";
+		};
+		18A5B9721FE4E14500A710EA /* QuickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				18A5B9731FE4E14500A710EA /* QuickerTests.swift */,
+				18A5B9751FE4E14500A710EA /* Info.plist */,
+			);
+			path = QuickerTests;
+			sourceTree = "<group>";
+		};
+		18A5B97D1FE4E14500A710EA /* QuickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18A5B97E1FE4E14500A710EA /* QuickerUITests.swift */,
+				18A5B9801FE4E14500A710EA /* Info.plist */,
+			);
+			path = QuickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A5B9571FE4E14500A710EA /* Quicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A5B9831FE4E14500A710EA /* Build configuration list for PBXNativeTarget "Quicker" */;
+			buildPhases = (
+				18A5B9541FE4E14500A710EA /* Sources */,
+				18A5B9551FE4E14500A710EA /* Frameworks */,
+				18A5B9561FE4E14500A710EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quicker;
+			productName = Quicker;
+			productReference = 18A5B9581FE4E14500A710EA /* Quicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18A5B96E1FE4E14500A710EA /* QuickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A5B9861FE4E14500A710EA /* Build configuration list for PBXNativeTarget "QuickerTests" */;
+			buildPhases = (
+				18A5B96B1FE4E14500A710EA /* Sources */,
+				18A5B96C1FE4E14500A710EA /* Frameworks */,
+				18A5B96D1FE4E14500A710EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A5B9711FE4E14500A710EA /* PBXTargetDependency */,
+			);
+			name = QuickerTests;
+			productName = QuickerTests;
+			productReference = 18A5B96F1FE4E14500A710EA /* QuickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18A5B9791FE4E14500A710EA /* QuickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A5B9891FE4E14500A710EA /* Build configuration list for PBXNativeTarget "QuickerUITests" */;
+			buildPhases = (
+				18A5B9761FE4E14500A710EA /* Sources */,
+				18A5B9771FE4E14500A710EA /* Frameworks */,
+				18A5B9781FE4E14500A710EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A5B97C1FE4E14500A710EA /* PBXTargetDependency */,
+			);
+			name = QuickerUITests;
+			productName = QuickerUITests;
+			productReference = 18A5B97A1FE4E14500A710EA /* QuickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A5B9501FE4E14500A710EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Meeeesi;
+				TargetAttributes = {
+					18A5B9571FE4E14500A710EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					18A5B96E1FE4E14500A710EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18A5B9571FE4E14500A710EA;
+					};
+					18A5B9791FE4E14500A710EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18A5B9571FE4E14500A710EA;
+					};
+				};
+			};
+			buildConfigurationList = 18A5B9531FE4E14500A710EA /* Build configuration list for PBXProject "Quicker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A5B94F1FE4E14500A710EA;
+			productRefGroup = 18A5B9591FE4E14500A710EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A5B9571FE4E14500A710EA /* Quicker */,
+				18A5B96E1FE4E14500A710EA /* QuickerTests */,
+				18A5B9791FE4E14500A710EA /* QuickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A5B9561FE4E14500A710EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A5B9691FE4E14500A710EA /* LaunchScreen.storyboard in Resources */,
+				18A5B9661FE4E14500A710EA /* Assets.xcassets in Resources */,
+				18A5B9611FE4E14500A710EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A5B96D1FE4E14500A710EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A5B9781FE4E14500A710EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A5B9541FE4E14500A710EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A5B95E1FE4E14500A710EA /* ViewController.swift in Sources */,
+				18A5B9641FE4E14500A710EA /* Quicker.xcdatamodeld in Sources */,
+				18A5B95C1FE4E14500A710EA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A5B96B1FE4E14500A710EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A5B9741FE4E14500A710EA /* QuickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A5B9761FE4E14500A710EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A5B97F1FE4E14500A710EA /* QuickerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18A5B9711FE4E14500A710EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A5B9571FE4E14500A710EA /* Quicker */;
+			targetProxy = 18A5B9701FE4E14500A710EA /* PBXContainerItemProxy */;
+		};
+		18A5B97C1FE4E14500A710EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A5B9571FE4E14500A710EA /* Quicker */;
+			targetProxy = 18A5B97B1FE4E14500A710EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18A5B95F1FE4E14500A710EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A5B9601FE4E14500A710EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18A5B9671FE4E14500A710EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A5B9681FE4E14500A710EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A5B9811FE4E14500A710EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18A5B9821FE4E14500A710EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18A5B9841FE4E14500A710EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH3YLVXGK2;
+				INFOPLIST_FILE = Quicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meeeesi.Quicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18A5B9851FE4E14500A710EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH3YLVXGK2;
+				INFOPLIST_FILE = Quicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meeeesi.Quicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18A5B9871FE4E14500A710EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH3YLVXGK2;
+				INFOPLIST_FILE = QuickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meeeesi.QuickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quicker.app/Quicker";
+			};
+			name = Debug;
+		};
+		18A5B9881FE4E14500A710EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH3YLVXGK2;
+				INFOPLIST_FILE = QuickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meeeesi.QuickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quicker.app/Quicker";
+			};
+			name = Release;
+		};
+		18A5B98A1FE4E14500A710EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH3YLVXGK2;
+				INFOPLIST_FILE = QuickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meeeesi.QuickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Quicker;
+			};
+			name = Debug;
+		};
+		18A5B98B1FE4E14500A710EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GH3YLVXGK2;
+				INFOPLIST_FILE = QuickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Meeeesi.QuickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Quicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A5B9531FE4E14500A710EA /* Build configuration list for PBXProject "Quicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A5B9811FE4E14500A710EA /* Debug */,
+				18A5B9821FE4E14500A710EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A5B9831FE4E14500A710EA /* Build configuration list for PBXNativeTarget "Quicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A5B9841FE4E14500A710EA /* Debug */,
+				18A5B9851FE4E14500A710EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A5B9861FE4E14500A710EA /* Build configuration list for PBXNativeTarget "QuickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A5B9871FE4E14500A710EA /* Debug */,
+				18A5B9881FE4E14500A710EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A5B9891FE4E14500A710EA /* Build configuration list for PBXNativeTarget "QuickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A5B98A1FE4E14500A710EA /* Debug */,
+				18A5B98B1FE4E14500A710EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18A5B9621FE4E14500A710EA /* Quicker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18A5B9631FE4E14500A710EA /* Quicker.xcdatamodel */,
+			);
+			currentVersion = 18A5B9631FE4E14500A710EA /* Quicker.xcdatamodel */;
+			path = Quicker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18A5B9501FE4E14500A710EA /* Project object */;
+}
