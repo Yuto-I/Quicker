@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		18A5B95C1FE4E14500A710EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B95B1FE4E14500A710EA /* AppDelegate.swift */; };
-		18A5B95E1FE4E14500A710EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B95D1FE4E14500A710EA /* ViewController.swift */; };
+		18A5B95E1FE4E14500A710EA /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B95D1FE4E14500A710EA /* InputViewController.swift */; };
 		18A5B9611FE4E14500A710EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A5B95F1FE4E14500A710EA /* Main.storyboard */; };
 		18A5B9641FE4E14500A710EA /* Quicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B9621FE4E14500A710EA /* Quicker.xcdatamodeld */; };
 		18A5B9661FE4E14500A710EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A5B9651FE4E14500A710EA /* Assets.xcassets */; };
 		18A5B9691FE4E14500A710EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A5B9671FE4E14500A710EA /* LaunchScreen.storyboard */; };
 		18A5B9741FE4E14500A710EA /* QuickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B9731FE4E14500A710EA /* QuickerTests.swift */; };
 		18A5B97F1FE4E14500A710EA /* QuickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B97E1FE4E14500A710EA /* QuickerUITests.swift */; };
+		18A5B98D1FE4E30D00A710EA /* StackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B98C1FE4E30D00A710EA /* StackTableViewController.swift */; };
+		18A5B98F1FE4E34300A710EA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B98E1FE4E34300A710EA /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		18A5B9581FE4E14500A710EA /* Quicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A5B95B1FE4E14500A710EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18A5B95D1FE4E14500A710EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18A5B95D1FE4E14500A710EA /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		18A5B9601FE4E14500A710EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18A5B9631FE4E14500A710EA /* Quicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quicker.xcdatamodel; sourceTree = "<group>"; };
 		18A5B9651FE4E14500A710EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		18A5B97A1FE4E14500A710EA /* QuickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A5B97E1FE4E14500A710EA /* QuickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickerUITests.swift; sourceTree = "<group>"; };
 		18A5B9801FE4E14500A710EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A5B98C1FE4E30D00A710EA /* StackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTableViewController.swift; sourceTree = "<group>"; };
+		18A5B98E1FE4E34300A710EA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				18A5B95B1FE4E14500A710EA /* AppDelegate.swift */,
-				18A5B95D1FE4E14500A710EA /* ViewController.swift */,
+				18A5B95D1FE4E14500A710EA /* InputViewController.swift */,
+				18A5B98C1FE4E30D00A710EA /* StackTableViewController.swift */,
+				18A5B98E1FE4E34300A710EA /* DetailViewController.swift */,
 				18A5B95F1FE4E14500A710EA /* Main.storyboard */,
 				18A5B9651FE4E14500A710EA /* Assets.xcassets */,
 				18A5B9671FE4E14500A710EA /* LaunchScreen.storyboard */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A5B95E1FE4E14500A710EA /* ViewController.swift in Sources */,
+				18A5B95E1FE4E14500A710EA /* InputViewController.swift in Sources */,
 				18A5B9641FE4E14500A710EA /* Quicker.xcdatamodeld in Sources */,
+				18A5B98F1FE4E34300A710EA /* DetailViewController.swift in Sources */,
+				18A5B98D1FE4E30D00A710EA /* StackTableViewController.swift in Sources */,
 				18A5B95C1FE4E14500A710EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
