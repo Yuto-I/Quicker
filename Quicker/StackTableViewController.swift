@@ -12,7 +12,10 @@ class StackTableViewController: UITableViewController {
     
     //MARK: Propeties
     var people: [String] = ["1", "2"]
+    var detail: [String] = ["aaa", "bbb"]
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,20 +40,20 @@ class StackTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contentCell", for: indexPath)
-
-        cell.textLabel?.text = people[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contentCell", for: indexPath) as! ContentTableViewCell
+        cell.inputDateLabel.text = people[indexPath.row]
+        cell.contentLabel.text = detail[indexPath.row]
         return cell
     }
  
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+ 
 
     /*
     // Override to support editing the table view.
@@ -86,6 +89,8 @@ class StackTableViewController: UITableViewController {
         guard let indexPath = tableView.indexPath(for: sender as! UITableViewCell) else {
             fatalError()
         }
+        
+        
         if segue.identifier == "toDetail" {
             tableView.deselectRow(at: indexPath, animated: true)
         }

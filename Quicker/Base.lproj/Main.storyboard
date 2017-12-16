@@ -89,14 +89,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentCell" id="Szc-5D-ZV0">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentCell" id="Szc-5D-ZV0" customClass="ContentTableViewCell" customModule="Quicker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Szc-5D-ZV0" id="1pV-M0-dhd">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHQ-8c-SEl">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="13"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.31298210859999998" green="0.33816199609999997" blue="0.35253312949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-Le-pSx">
+                                            <rect key="frame" x="16" y="12" width="343" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="contentLabel" destination="JrM-Le-pSx" id="BQO-iI-3oj"/>
+                                    <outlet property="inputDateLabel" destination="GHQ-8c-SEl" id="kOd-8L-azf"/>
                                     <segue destination="lA5-YP-Cax" kind="show" identifier="toDetail" id="P7V-aE-337"/>
                                 </connections>
                             </tableViewCell>
@@ -116,7 +134,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVU-E3-Ym3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1903" y="131"/>
+            <point key="canvasLocation" x="1901.5999999999999" y="130.88455772113943"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="b9J-rg-Rug">
@@ -125,7 +143,21 @@
                     <view key="view" contentMode="scaleToFill" id="KMU-AD-cqF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-jf-KR5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pzJ-jf-KR5" firstAttribute="leading" secondItem="hTy-17-68r" secondAttribute="leading" id="1w1-A4-jqX"/>
+                            <constraint firstItem="pzJ-jf-KR5" firstAttribute="top" secondItem="hTy-17-68r" secondAttribute="top" id="n5X-4p-O6B"/>
+                            <constraint firstItem="hTy-17-68r" firstAttribute="trailing" secondItem="pzJ-jf-KR5" secondAttribute="trailing" id="ooO-x6-j4d"/>
+                            <constraint firstItem="hTy-17-68r" firstAttribute="bottom" secondItem="pzJ-jf-KR5" secondAttribute="bottom" id="ryI-l1-cDy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hTy-17-68r"/>
                     </view>
                     <navigationItem key="navigationItem" id="HIk-d1-axT">
@@ -136,10 +168,13 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="QUP-YM-BJ3"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="pzJ-jf-KR5" id="qFp-C1-BDu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SHC-HT-q0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3375" y="134"/>
+            <point key="canvasLocation" x="3373.5999999999999" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z87-g8-gjR">

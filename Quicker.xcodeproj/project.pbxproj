@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187F0E4D1FE510C700631DC4 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F0E4C1FE510C700631DC4 /* ContentTableViewCell.swift */; };
 		18A5B95C1FE4E14500A710EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B95B1FE4E14500A710EA /* AppDelegate.swift */; };
 		18A5B95E1FE4E14500A710EA /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A5B95D1FE4E14500A710EA /* InputViewController.swift */; };
 		18A5B9611FE4E14500A710EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A5B95F1FE4E14500A710EA /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187F0E4C1FE510C700631DC4 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
 		18A5B9581FE4E14500A710EA /* Quicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A5B95B1FE4E14500A710EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A5B95D1FE4E14500A710EA /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				18A5B98C1FE4E30D00A710EA /* StackTableViewController.swift */,
 				18A5B98E1FE4E34300A710EA /* DetailViewController.swift */,
 				18A5B95F1FE4E14500A710EA /* Main.storyboard */,
+				187F0E4C1FE510C700631DC4 /* ContentTableViewCell.swift */,
 				18A5B9651FE4E14500A710EA /* Assets.xcassets */,
 				18A5B9671FE4E14500A710EA /* LaunchScreen.storyboard */,
 				18A5B96A1FE4E14500A710EA /* Info.plist */,
@@ -273,6 +276,7 @@
 				18A5B98F1FE4E34300A710EA /* DetailViewController.swift in Sources */,
 				18A5B98D1FE4E30D00A710EA /* StackTableViewController.swift in Sources */,
 				18A5B95C1FE4E14500A710EA /* AppDelegate.swift in Sources */,
+				187F0E4D1FE510C700631DC4 /* ContentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
