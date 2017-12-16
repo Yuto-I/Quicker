@@ -41,6 +41,21 @@ class InputViewController: UIViewController, UITextViewDelegate, UIImagePickerCo
     //MARK: Actions
     
     @IBAction func saveButton(_ sender: UIBarButtonItem) {
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .medium
+        let now = Date()
+        appDelegate?.inputDate = dateFormatter.string(from: now)
+        appDelegate?.content = contentView.text
+        
+        let tableViewController = StackTableViewController()
+        tableViewController.people.append((appDelegate?.inputDate)!)
+        tableViewController.detail.append(contentView.text)
+        print(tableViewController.people)
+        print(tableViewController.detail)
+        tableViewController.tableView.reloadData()
+        
         contentView.text = ""
     }
     
