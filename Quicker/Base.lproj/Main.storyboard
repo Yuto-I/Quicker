@@ -23,7 +23,8 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCD-lL-M6t">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
@@ -65,12 +66,14 @@
                     <navigationItem key="navigationItem" id="cqU-IC-zRQ">
                         <barButtonItem key="rightBarButtonItem" title="Folder" id="1Uh-D0-wRX">
                             <connections>
-                                <segue destination="Y9y-R0-hWX" kind="presentation" id="o0K-Vz-qgO"/>
+                                <action selector="toStackPage:" destination="BYZ-38-t0r" id="DxO-XU-EWA"/>
+                                <segue destination="Y9y-R0-hWX" kind="presentation" identifier="toStack" id="o0K-Vz-qgO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="contentView" destination="eez-OB-9B5" id="KTm-Cf-aYN"/>
+                        <outlet property="keyboardMediaList" destination="iCD-lL-M6t" id="RmO-rn-uMc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,7 +97,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="lA5-YP-Cax" kind="show" id="P7V-aE-337"/>
+                                    <segue destination="lA5-YP-Cax" kind="show" identifier="toDetail" id="P7V-aE-337"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
